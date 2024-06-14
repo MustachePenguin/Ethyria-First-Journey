@@ -39,3 +39,4 @@ func play_anim(input_dir):
 		if input_dir.x == -1:
 			$AnimatedSprite2D.play("left_walk")
 	
+

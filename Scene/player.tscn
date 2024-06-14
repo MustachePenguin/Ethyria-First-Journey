@@ -158,7 +158,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sx522"]
-size = Vector2(8, 7)
+size = Vector2(14, 8)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_l8j1y")
@@ -170,5 +170,8 @@ animation = &"down_walk"
 frame_progress = 0.586891
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 12.5)
+position = Vector2(0, 12)
 shape = SubResource("RectangleShape2D_sx522")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_speed = 10.0
